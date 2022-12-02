@@ -22,7 +22,7 @@ struct VertexProperties {
 typedef boost::adjacency_list <
     boost::vecS, // OutEdgeList est un des types de conteneurs choisi en interne
     boost::vecS, // VertexList est de même un type de conteneur choisi en interne
-    boost::directedS, // graphe orienté avec des arcs directionnels
+    boost::undirectedS, // graphe orienté avec des arcs directionnels
     VertexProperties, // demande de prise en compte de nos sommets personalisés et non les sommets par defaut
     boost::property<boost::edge_weight_t, double> // poids des arcs
 > Graph;
